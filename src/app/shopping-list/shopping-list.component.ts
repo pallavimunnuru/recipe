@@ -12,41 +12,32 @@ import{ShoppingService} from '../shopping.service';
   styleUrls: ['./shopping-list.component.css']
 })
 export class ShoppingListComponent implements OnInit {
-name:string=" ";
+name:string;
 amount: number;
 
-goals1=[];
- index=0;
+goals1:Ingredient[];
+ index:number;
 
 add(){
-this.goals1=this.myservics.add(this.name,this.amount);
+this.goals1=this.myservics.add(this.name,this.amount,this.index);
 
 }
 
-slice(){
+select(goals1,i){
 
+this.name=goals1.name;
+this.amount=goals1.amount;
+this.index=i
 
+}
+
+delete(){
+
+this.goals1.splice(this.index,1)
 
 }
 
 
-
-
-
-
-/*  
-textValue1:string = ' ';
-textValue:string = ' ';
-
- log = '';
-
-goals1=[];
-
-logText(){
-this.goals1.push(this.textValue1,this.textValue);
-this.textValue1=' ';
-this.textValue=' ';
-}*/
   constructor(private myservics:ShoppingService) { }
 
   ngOnInit() {

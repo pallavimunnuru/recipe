@@ -1,0 +1,32 @@
+<!--<p>
+  recipes works!
+</p>-->
+<!--<app-recipe-detail></app-recipe-detail>
+<app-recipe-list></app-recipe-list>-->
+<div class="container">
+  <div class="row">
+    <!--<div class="col-sm-1"></div>-->
+    <div class="col-sm-5">
+      <button type="submit" class="btn btn-success">New Recipe</button>
+    </div>
+    <!--<div class="col-sm-2>">-->
+  <div class="col-sm-3">
+      <p class="select-recipe">Please Select a Recipe</p></div>
+    <!--</div>-->
+  </div>
+
+
+
+  <ul class="nav recipe-list">
+
+
+    <li><a [routerLink]="['recipedetails']" appDirectives href="#">Tasty schnitzel<br><h6>as per Tasty schnizel-just swesome<img class="img-fluid my-image" src="../assets/images/tasty.jpg" alt="tasty"></h6></a></li>
+
+    <li><a appDirectives href="#">Big Fat Burger<br><h6>What else you need to say<img class="img-fluid my-image" src="../assets/images/burger.jpg" alt="tasty"></h6></a></li>
+  </ul>
+
+
+</div>
+
+<router-outlet></router-outlet>
+<!--<app-recipe-detail></app-recipe-detail>-->

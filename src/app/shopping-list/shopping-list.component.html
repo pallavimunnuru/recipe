@@ -1,0 +1,37 @@
+<div class="container">
+
+  <form #f="ngForm">
+    <div class="row">
+      <div class="col-sm-1"></div>
+      <div class="form-group col-sm-4">
+        <label for="Name">Name</label>
+        <input  type="text" class="form-control" id="name" placeholder="Enter Text" name="name" [(ngModel)]="name" required>
+      </div>
+      <div class="form-group col-sm-1">
+        <label for="Amount">Amount</label>
+        <input type="number" class="form-control" name="amount" [(ngModel)]="amount" required >
+     
+     
+      
+        <ul type="none">
+         <li *ngFor ='let goal of goals1'>{{goal.name}}{{goal.amount}}</li>
+        </ul>
+     
+    
+      
+      </div>
+      <div class="col-sm-6"></div>
+    </div>
+   
+
+    <div class="col-sm-1"></div>
+
+    <button (click)="add()" class="btn btn-success">Add</button>
+    <button type="reset" class="btn btn-primary">clear</button>
+    <button (click)="delete()" type="delete" class="btn btn-primary">delete</button>
+
+
+    
+
+  </form>
+</div>

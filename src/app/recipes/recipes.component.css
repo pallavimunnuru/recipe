@@ -1,0 +1,19 @@
+
+li{
+
+    width: 30%
+}
+.my-image{
+
+width:20%;
+height: 20%;
+float: right;
+margin-top: -20px
+/*padding: 0px*/
+
+}
+.recipe-list{
+
+margin-top: 35px
+}
+/*<p [ngStyle]="{'font-style':style,'font-size':size,'color':color}"></p>*/

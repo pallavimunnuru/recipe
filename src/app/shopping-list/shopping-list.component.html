@@ -14,7 +14,7 @@
      
       
         <ul type="none">
-         <li *ngFor ='let goal of goals1'>{{goal.name}}{{goal.amount}}</li>
+         <li *ngFor ='let goal of goals1; let i=index' (click)="select(goal,i)">{{goal.name}}{{goal.amount}}</li>
         </ul>
      
     
